@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Drobne naprawy budynków Łódź | BARTON Bartłomiej Drymer</title>
+<meta name="description" content="Drobne naprawy remontowe i konserwacyjne budynków w Łodzi i okolicach: tynki, elewacje, opaski, kominy, klatki schodowe, ogrodzenia, zimą sople i śnieg z dachów.">
+<meta name="theme-color" content="#1c2233">
+<link rel="icon" href="img/znak.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/archivo-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-1080.webp" imagesrcset="img/hero-720.webp 720w, img/hero-1080.webp 1080w, img/hero-1440.webp 1440w, img/hero-1920.webp 1920w" imagesizes="(max-width: 900px) max(100vw, 75vh), max(50vw, 134vh)">
+<style>
+@font-face{font-family:Archivo;src:url(fonts/archivo-rdzen.woff2) format("woff2");font-weight:400 800;font-stretch:75% 100%;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Archivo;src:url(fonts/archivo-pl.woff2) format("woff2");font-weight:400 800;font-stretch:75% 100%;font-display:swap;unicode-range:U+0104-0107,U+010C-010D,U+0118-011B,U+0141-0144,U+0158-0161,U+016E-016F,U+0179-017E}
+:root{--gf:#1c2233;--gf2:#141927;--po:#f26b1f;--po2:#ff8a45;--ink:#161a26;--mut:#4b5263;--sz:#eef1f5;--li:#d8dde6;--hh:68px;--w:min(calc(100vw - 32px),1240px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:400 17px/1.6 Archivo,Arial,sans-serif;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-weight:800;line-height:1.08;margin:0;letter-spacing:-.015em}
+h2{font-size:clamp(30px,3.8vw,46px)}
+h3{font-size:21px;line-height:1.2;font-weight:700}
+p{margin:0}
+.wrap{width:var(--w);margin:0 auto}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--po);color:var(--gf2);text-decoration:none;font-weight:700;font-size:17px;padding:15px 26px;border:0;border-radius:0;cursor:pointer;transition:background .2s}
+.btn:hover{background:var(--po2)}
+.btn svg{width:16px;height:16px}
+/* naglowek */
+.top{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--li);height:var(--hh)}
+.top .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--gf)}
+.logo svg{width:40px;height:30px;flex:none}
+.logo span{display:flex;flex-direction:column;line-height:1}
+.logo b{font-size:23px;font-weight:800;letter-spacing:.08em}
+.logo small{font-size:11.5px;font-weight:500;color:var(--mut);letter-spacing:.02em;margin-top:3px}
+.nav{display:flex;align-items:center;gap:26px;font-size:15.5px;font-weight:500}
+.nav a{text-decoration:none;padding:6px 0;border-bottom:3px solid transparent}
+.nav a:hover{border-color:var(--po)}
+.nav a[aria-current]{border-color:var(--po)}
+.tel{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:#fff;background:var(--gf);text-decoration:none;padding:10px 16px;font-size:15.5px;white-space:nowrap}
+.tel svg{width:16px;height:16px;color:var(--po)}
+.burger{display:none;width:44px;height:44px;border:0;background:none;padding:10px;cursor:pointer;color:var(--gf)}
+.burger i{display:block;height:2px;background:currentColor;margin:6px 0;transition:transform .2s,opacity .2s}
+/* hero: tekst na grafitowym tle, zdjecie usterki do krawedzi ekranu */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:calc(100svh - var(--hh));background:var(--gf);color:#fff}
+.hero-in{display:flex;flex-direction:column;justify-content:center;padding:56px 64px 64px max(16px,calc((100vw - 1240px)/2))}
+.hero h1{font-size:clamp(40px,4.4vw,64px);max-width:10.5em}
+.hero h1 span{display:block;font-weight:500;font-size:.42em;line-height:1.35;margin-top:18px;color:#cfd4e0;letter-spacing:0;max-width:26em}
+.hero .btn{margin-top:34px;align-self:flex-start}
+.hero .fakt{margin-top:22px;font-size:15px;color:#aab1c2}
+.hero figure{margin:0;position:relative;overflow:hidden;background:#2a3043}
+.hero figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero figure:before{content:"";position:absolute;left:0;top:0;bottom:0;width:22px;background:var(--po);z-index:1}
+.hero figure figcaption{position:absolute;right:16px;bottom:16px;z-index:1;background:rgba(20,25,39,.82);color:#fff;font-size:13.5px;padding:7px 12px}
+/* sekcje */
+.sek{padding:96px 0}
+.sz{background:var(--sz)}
+.intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:center}
+.intro p{color:var(--mut);margin-top:20px;max-width:32em}
+.intro p strong{color:var(--ink);font-weight:600}
+.para{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.para figure{margin:0}
+.para .f{aspect-ratio:3/4;overflow:hidden;background:#cfd4de}
+.para img{width:100%;height:100%;object-fit:cover}
+.para figcaption{font-size:14.5px;color:var(--mut);margin-top:10px}
+.zak{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:48px;border-top:3px solid var(--gf)}
+.zak>div{padding:28px 28px 8px 0}
+.zak>div+div{padding-left:28px;border-left:1px solid var(--li)}
+.zak ul{list-style:none;margin:16px 0 0;padding:0;font-size:16px}
+.zak li{position:relative;padding:9px 0 9px 22px;border-top:1px solid var(--li)}
+.zak li:before{content:"";position:absolute;left:0;top:17px;width:10px;height:10px;background:var(--po)}
+.gl{display:flex;justify-content:space-between;align-items:end;gap:24px}
+.gl p{color:var(--mut);margin-top:14px;max-width:36em}
+.tasma{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,calc((min(100vw - 32px,1240px) - 3*20px)/3.4));gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:40px;padding:0 max(16px,calc((100vw - 1240px)/2)) 12px;scroll-padding-inline:max(16px,calc((100vw - 1240px)/2));scrollbar-width:thin;cursor:grab}
+.tasma.ciag{cursor:grabbing;scroll-snap-type:none}
+.tasma figure{margin:0;scroll-snap-align:start}
+.tasma .fot{aspect-ratio:4/3;overflow:hidden;background:#cfd4de}
+.tasma img{width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-drag:none}
+.tasma figcaption{font-weight:600;margin-top:12px;font-size:16px}
+.strz{display:flex;gap:8px}
+.strz button{width:46px;height:46px;border:2px solid var(--gf);background:#fff;color:var(--gf);cursor:pointer;display:grid;place-items:center}
+.strz button:hover{background:var(--gf);color:#fff}
+.strz svg{width:18px;height:18px}
+.zima{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:72px;align-items:center}
+.zima p{color:var(--mut);margin-top:18px;max-width:34em}
+.zima ul{list-style:none;margin:0;padding:0;font-size:19px;font-weight:600}
+.zima li{padding:18px 0 18px 34px;border-bottom:1px solid var(--li);position:relative}
+.zima li:first-child{border-top:3px solid var(--gf)}
+.zima li:before{content:"";position:absolute;left:0;top:27px;width:14px;height:14px;background:var(--po)}
+.ojc{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:center;border-top:3px solid var(--gf);padding-top:36px}
+.ojc h2{font-size:clamp(26px,3vw,36px)}
+.ojc p{color:var(--mut);margin-top:12px;max-width:44em}
+.btn.obr{background:#fff;color:var(--gf);border:2px solid var(--gf)}
+.btn.obr:hover{background:var(--gf);color:#fff}
+.kont{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px}
+.dane{margin-top:28px;display:grid;gap:18px;font-size:17px}
+.dane div{border-top:1px solid var(--li);padding-top:16px}
+.dane small{display:block;color:var(--mut);font-size:14px;margin-bottom:2px}
+.dane a{font-weight:700;text-decoration:none}
+.dane a:hover{color:#c4500f}
+form{background:var(--sz);padding:36px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+form label{display:grid;gap:6px;font-size:14.5px;font-weight:600}
+form .pel{grid-column:1/-1}
+input,select,textarea{font:inherit;font-size:16px;padding:13px 14px;border:1px solid #b8bfcc;border-radius:0;background:#fff;color:var(--ink);width:100%}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--gf);outline-offset:0;border-color:var(--gf)}
+textarea{min-height:120px;resize:vertical}
+form .zgoda{font-weight:400;font-size:13.5px;color:var(--mut);display:flex;gap:10px;align-items:flex-start}
+form .zgoda input{width:18px;height:18px;margin-top:2px;flex:none}
+form .btn{justify-self:start}
+.ok{grid-column:1/-1;font-weight:600}
+.stopka{background:var(--gf2);color:#b9bfcd;font-size:15px;padding:48px 0 28px}
+.stopka .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+.stopka b{color:#fff;display:block;margin-bottom:8px}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff}
+.stopka .dol{grid-column:1/-1;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.14);padding-top:20px;margin-top:8px;font-size:14px}
+.mob{display:none}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+@media (max-width:1100px){.nav{gap:18px;font-size:15px}.zak{grid-template-columns:repeat(2,minmax(0,1fr))}.zak>div:nth-child(3){padding-left:0;border-left:0}}
+@media (max-width:960px){
+ .nav,.top .tel span{display:none}
+ .burger{display:block}
+ .top .tel{padding:10px 12px}
+ .menu-otw .nav{display:flex;position:fixed;top:var(--hh);left:0;right:0;bottom:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:12px 16px;font-size:20px;font-weight:600;overflow:auto}
+ .menu-otw .nav a{padding:16px 4px;border-bottom:1px solid var(--li)}
+ .menu-otw .burger i:nth-child(1){transform:translateY(8px) rotate(45deg)}
+ .menu-otw .burger i:nth-child(2){opacity:0}
+ .menu-otw .burger i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+ .intro,.zima,.kont{grid-template-columns:minmax(0,1fr);gap:40px}
+}
+@media (max-width:900px){
+ .hero{display:flex;flex-direction:column}
+ .hero figure{order:-1;flex:1 1 0;min-height:min(58vw,30svh);max-height:56svh}
+ .hero figure:before{width:auto;height:10px;top:auto;right:0;bottom:0}
+ .hero figure figcaption{bottom:22px;font-size:12.5px}
+ .hero-in{flex:0 0 auto;padding:22px 16px 28px}
+}
+@media (max-width:760px){
+ :root{--hh:60px}
+ body{font-size:16.5px}
+ .logo b{font-size:20px}
+ .hero h1{font-size:clamp(32px,9.4vw,40px)}
+ .hero h1 span{font-size:max(17px,.46em);margin-top:12px}
+ .hero .btn{margin-top:24px;width:100%;justify-content:center;align-self:stretch}
+ .hero .fakt{font-size:14px;margin-top:14px}
+ .sek{padding:64px 0}
+ .zak{grid-template-columns:minmax(0,1fr)}
+ .zak>div,.zak>div+div{padding:24px 0 4px;border-left:0}
+ .gl{flex-direction:column;align-items:flex-start}
+ .strz{display:none}
+ .tasma{grid-auto-columns:78%;padding:0 16px 12px;scroll-padding-inline:16px}
+ .ojc{grid-template-columns:minmax(0,1fr)}
+ form{grid-template-columns:minmax(0,1fr);padding:22px}
+ .stopka .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .stopka .wrap>div:first-child{grid-column:1/-1}
+ .mob{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1fr;transform:translateY(110%);transition:transform .25s}
+ .mob.widac{transform:none}
+ .mob a{display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 8px;font-weight:700;text-decoration:none;background:var(--gf);color:#fff}
+ .mob a+a{background:var(--po);color:var(--gf2)}
+ .mob svg{width:16px;height:16px}
+}
+@media (max-height:820px) and (min-width:901px){.hero h1{font-size:clamp(38px,3.9vw,56px)}.hero-in{padding-top:40px;padding-bottom:44px}.hero .btn{margin-top:26px}}
+</style>
+</head>
+<body>
+<header class="top" id="top">
+ <div class="wrap">
+  <a class="logo" href="./" aria-label="BARTON - strona główna">
+   <svg viewBox="0 0 64 48" aria-hidden="true"><path d="M2 40 30 8l32 32h-9L30 17 11 40Z" fill="currentColor"/><rect x="42" y="6" width="12" height="12" fill="#f26b1f"/></svg>
+   <span><b>BARTON</b><small>naprawy budynków</small></span>
+  </a>
+  <nav class="nav" aria-label="Menu">
+   <a href="#naprawy" aria-current="page">Naprawy</a>
+   <a href="#zakres">Zakres prac</a>
+   <a href="#zima">Zimą</a>
+   <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="tel" href="tel:+48693024252"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span>693 024 252</span></a>
+  <button class="burger" aria-label="Otwórz menu" aria-expanded="false"><i></i><i></i><i></i></button>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="naprawy">
+ <div class="hero-in">
+  <h1>Drobne naprawy budynków w&nbsp;Łodzi<span>Naprawiamy w&nbsp;porę, zanim mała usterka zamieni się w&nbsp;kosztowny remont.</span></h1>
+  <a class="btn" href="#kontakt">Zgłoś usterkę <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+  <p class="fakt">Dla właścicieli i&nbsp;zarządców nieruchomości. Łódź i&nbsp;okolice.</p>
+ </div>
+ <figure>
+  <img src="img/hero-1080.webp" srcset="img/hero-720.webp 720w, img/hero-1080.webp 1080w, img/hero-1440.webp 1440w, img/hero-1920.webp 1920w" sizes="(max-width: 900px) max(100vw, 75vh), max(50vw, 134vh)" width="1920" height="1440" alt="Skorodowana płyta balkonu i odpadający tynk w kamienicy" fetchpriority="high">
+  <figcaption>Płyta balkonu do naprawy</figcaption>
+ </figure>
+</section>
+
+<section class="sek">
+ <div class="wrap intro">
+  <div>
+   <h2>Mała naprawa dziś, mniejszy rachunek jutro</h2>
+   <p>Wieloletnie zaniedbania kończą się remontami, których można było uniknąć. <strong>Bieżące naprawy obniżają koszty utrzymania budynku</strong>, a&nbsp;zrobione na czas nie dopuszczają do większych szkód.</p>
+   <p>Pracujemy dla wszystkich właścicieli i&nbsp;zarządców nieruchomości, dla których liczy się dobry stan techniczny budynku.</p>
+  </div>
+  <div class="para">
+   <figure><div class="f"><img src="img/tynk-640.webp" srcset="img/tynk-640.webp 640w, img/tynk-1000.webp 1000w" sizes="(max-width:960px) 82vw, 560px" width="640" height="480" loading="lazy" alt="Pęknięcie tynku pod oknem"></div><figcaption>Pęknięty tynk pod oknem</figcaption></figure>
+   <figure><div class="f"><img src="img/elewacja-640.webp" srcset="img/elewacja-640.webp 640w, img/elewacja-1000.webp 1000w" sizes="(max-width:960px) 82vw, 560px" width="640" height="480" loading="lazy" alt="Ubytki tynku na narożniku elewacji"></div><figcaption>Ubytki na elewacji</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="sek sz" id="zakres">
+ <div class="wrap">
+  <h2>Zakres prac</h2>
+  <div class="zak">
+   <div><h3>Elewacja i&nbsp;tynki</h3><ul><li>Naprawy i&nbsp;uzupełnienia tynków</li><li>Naprawy elewacji, cokołów, ościeży drzwiowych i&nbsp;okiennych</li><li>Naprawy docieplenia budynków</li><li>Naprawa opasek przy budynkach</li></ul></div>
+   <div><h3>Dach i&nbsp;kominy</h3><ul><li>Doszczelnienia pokrycia dachów</li><li>Naprawy tynków na kominach</li></ul></div>
+   <div><h3>Wnętrza i&nbsp;klatki</h3><ul><li>Naprawy ścian po zalaniach</li><li>Naprawy płyt gipsowo-kartonowych</li><li>Malowanie klatek schodowych i&nbsp;wiatrołapów</li><li>Naprawy posadzek i&nbsp;wyszczerbionych schodów</li></ul></div>
+   <div><h3>Wokół budynku</h3><ul><li>Naprawy i&nbsp;malowanie słupków i&nbsp;ogrodzeń</li><li>Przycinka drzew i&nbsp;krzewów</li><li>Wiele innych napraw konserwacyjnych i&nbsp;remontowych</li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section class="sek">
+ <div class="wrap gl">
+  <div><h2>Takie usterki naprawiamy</h2><p>Rysy, ubytki, nieszczelne pokrycia i&nbsp;zniszczone elementy elewacji. Im wcześniej, tym taniej.</p></div>
+  <div class="strz"><button type="button" data-k="-1" aria-label="Poprzednie zdjęcia"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 8H3M7 4 3 8l4 4"/></svg></button><button type="button" data-k="1" aria-label="Następne zdjęcia"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button></div>
+ </div>
+ <div class="tasma" tabindex="0" aria-label="Galeria usterek">
+  <figure><div class="fot"><img src="img/podworze-640.webp" srcset="img/podworze-640.webp 640w, img/podworze-1000.webp 1000w" sizes="(max-width:760px) 78vw, 360px" width="640" height="480" loading="lazy" alt="Zniszczona elewacja podwórza kamienicy"></div><figcaption>Elewacja od podwórza</figcaption></figure>
+  <figure><div class="fot"><img src="img/dachowka-640.webp" srcset="img/dachowka-640.webp 640w, img/dachowka-1000.webp 1000w" sizes="(max-width:760px) 78vw, 360px" width="640" height="360" loading="lazy" alt="Dach z dachówki ceramicznej z kominami"></div><figcaption>Pokrycie dachu i&nbsp;kominy</figcaption></figure>
+  <figure><div class="fot"><img src="img/dach-640.webp" srcset="img/dach-640.webp 640w, img/dach-1000.webp 1000w" sizes="(max-width:760px) 78vw, 360px" width="640" height="480" loading="lazy" alt="Płaski dach z kominami wentylacyjnymi"></div><figcaption>Dach płaski</figcaption></figure>
+  <figure><div class="fot"><img src="img/tynk-640.webp" srcset="img/tynk-640.webp 640w, img/tynk-1000.webp 1000w" sizes="(max-width:760px) 78vw, 360px" width="640" height="480" loading="lazy" alt="Pęknięcie tynku pod oknem"></div><figcaption>Rysy na tynku</figcaption></figure>
+  <figure><div class="fot"><img src="img/budynek-640.webp" srcset="img/budynek-640.webp 640w, img/budynek-1000.webp 1000w" sizes="(max-width:760px) 78vw, 360px" width="640" height="480" loading="lazy" alt="Budynek mieszkalny z odnowioną elewacją"></div><figcaption>Elewacja i&nbsp;cokół</figcaption></figure>
+  <figure><div class="fot"><img src="img/blok-640.webp" srcset="img/blok-640.webp 640w, img/blok-1000.webp 1000w" sizes="(max-width:760px) 78vw, 360px" width="640" height="360" loading="lazy" alt="Wysoki blok mieszkalny z balkonami"></div><figcaption>Budynki wielorodzinne</figcaption></figure>
+ </div>
+</section>
+
+<section class="sek sz" id="zima">
+ <div class="wrap zima">
+  <div>
+   <h2>Zimą zdejmujemy sople i&nbsp;śnieg</h2>
+   <p>Usuwamy sople i&nbsp;nadmiar śniegu z&nbsp;dachów, balkonów i&nbsp;tarasów. Zmniejsza to ryzyko niekontrolowanego upadku i&nbsp;niechcianych przecieków.</p>
+  </div>
+  <ul><li>Sople z&nbsp;okapów i&nbsp;rynien</li><li>Nadmiar śniegu z&nbsp;dachów</li><li>Balkony i&nbsp;tarasy</li></ul>
+ </div>
+</section>
+
+<section class="sek">
+ <div class="wrap ojc">
+  <div><h2>Po przeglądzie technicznym budynku</h2><p>Masz protokół z&nbsp;przeglądu z&nbsp;listą usterek? Przeglądy techniczne wykonuje Biuro Inżynierskie Jarosław Drymer, a&nbsp;zalecone drobne naprawy możemy wykonać od razu po nim.</p></div>
+  <a class="btn obr" href="https://wylinka-podglad.pl/przegladybudynkow-koncepcja/">Przeglądy budynków <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+ </div>
+</section>
+
+<section class="sek sz" id="kontakt">
+ <div class="wrap kont">
+  <div>
+   <h2>Zgłoś usterkę</h2>
+   <p style="color:var(--mut);margin-top:18px;max-width:30em">Opisz, co trzeba naprawić i&nbsp;gdzie stoi budynek. Odezwiemy się z&nbsp;terminem oględzin i&nbsp;wyceną.</p>
+   <div class="dane">
+    <div><small>Telefon</small><a href="tel:+48693024252">693 024 252</a></div>
+    <div><small>E-mail</small><a href="mailto:biuro@drymer.pl">biuro@drymer.pl</a></div>
+    <div><small>Obszar działania</small>Łódź i&nbsp;okolice</div>
+   </div>
+  </div>
+  <form onsubmit="event.preventDefault();this.querySelector('.ok').hidden=false">
+   <label>Imię i&nbsp;nazwisko<input name="imie" autocomplete="name" required></label>
+   <label>Telefon<input name="tel" type="tel" autocomplete="tel" required></label>
+   <label class="pel">Adres budynku<input name="adres" autocomplete="street-address"></label>
+   <label class="pel">Co trzeba naprawić?<select name="rodzaj"><option>Tynki i&nbsp;elewacja</option><option>Dach, kominy</option><option>Klatka schodowa, wnętrza</option><option>Ogrodzenie, otoczenie</option><option>Sople i&nbsp;śnieg</option><option>Inne</option></select></label>
+   <label class="pel">Opis<textarea name="opis" placeholder="Np. odpadający tynk na kominie, budynek 3-piętrowy"></textarea></label>
+   <label class="pel zgoda"><input type="checkbox" required> Zgadzam się na kontakt w&nbsp;sprawie zgłoszenia.</label>
+   <button class="btn" type="submit">Wyślij zgłoszenie</button>
+   <p class="ok" hidden>To podgląd strony, formularz zacznie wysyłać wiadomości po uruchomieniu.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="wrap">
+  <div><b>BARTON Bartłomiej Drymer</b>Drobne naprawy remontowe i&nbsp;konserwacyjne budynków. Łódź i&nbsp;okolice.</div>
+  <div><b>Kontakt</b><a href="tel:+48693024252">693 024 252</a><br><a href="mailto:biuro@drymer.pl">biuro@drymer.pl</a></div>
+  <div><b>Firma</b>NIP 982-032-13-11<br>REGON 362789620</div>
+  <div class="dol"><span>© <span id="rok">2026</span> BARTON Bartłomiej Drymer</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=barton&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+ </div>
+</footer>
+
+<div class="mob" id="mob"><a href="tel:+48693024252"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>Zadzwoń</a><a href="#kontakt">Zgłoś usterkę</a></div>
+
+<script defer src="app.js"></script>
+</body>
+</html>
